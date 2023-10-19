@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello JavaScript</h1>
+
+<!-- Scope related problem -->
+
+    <!-- <script>
+        const firstName = fun();
+       
+        function fun(){
+            let name = 'Vivek';
+            return `my is ${name} malviya`;
+        }
+        console.log(firstName);
+    </script> -->
+
+<!-- Duplicate item from array -->
+
+    <script>
+        // const arr = [1,2,3,4,1,2];
+        // const b = [];
+        // for(let i = 0; i < length; i++){
+        //     if(b.indexOf(arr[i]) == -1){
+        //         b.push(arr[i])
+        //     }
+        // }
+
+        // console.log("removed array value", b)
+
+        const arr = [1,2,3,4,1,2];
+        const b = [];
+
+        arr.filter((dup) => {
+            if(b.indexOf(arr[dup]) == -1){
+            b.push(arr[dup])
+        }
+        })
+
+        console.log("removed array value", b);
+    </script>
+
+</body>
+</html>
